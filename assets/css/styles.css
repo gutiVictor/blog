@@ -497,6 +497,29 @@ body {
     transform: scale(1.1);
 }
 
+/* CV Link */
+.cv-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cv-link:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-link i {
+    font-size: 1rem;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -552,6 +575,11 @@ body {
 
     .project-links {
         flex-direction: column;
+    }
+
+    .cv-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
     }
 }
 

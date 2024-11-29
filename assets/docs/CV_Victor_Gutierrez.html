@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Victor Arul Gutierrez Sanabria</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #333;
+            --background-color: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 2rem;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .skill-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .project {
+            margin-bottom: 1.5rem;
+        }
+
+        .project h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            .cv-container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header class="header">
+            <h1>Victor Arul Gutierrez Sanabria</h1>
+            <p>Desarrollador Web Full Stack</p>
+            <div class="contact-info">
+                <span>📧 gutierrezasanabria@gmail.com</span>
+                <span>📍 Colombia</span>
+                <span>🌐 <a href="https://audaviall.netlify.app/" target="_blank">Portfolio</a></span>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Perfil Profesional</h2>
+            <p>Desarrollador Web Full Stack con experiencia en la creación de aplicaciones web modernas y responsivas. Especializado en JavaScript, React y desarrollo frontend. Apasionado por crear soluciones innovadoras y mantenerme actualizado con las últimas tecnologías web.</p>
+        </section>
+
+        <section class="section">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skill-list">
+                <div class="skill-item">HTML5 / CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React.js</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">Responsive Design</div>
+                <div class="skill-item">UI/UX Design</div>
+                <div class="skill-item">API Integration</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Proyectos Destacados</h2>
+            
+            <div class="project">
+                <h3>Volumen Mayor</h3>
+                <p>Aplicación web para cálculos y gestión de volúmenes con funcionalidades avanzadas.</p>
+                <a href="https://volumenmayor.netlify.app/" target="_blank" class="project-link">Ver Proyecto →</a>
+            </div>
+
+            <div class="project">
+                <h3>Granada Sud</h3>
+                <p>Plataforma web moderna para gestión y visualización de información.</p>
+                <a href="https://granadasud.netlify.app/" target="_blank" class="project-link">Ver Proyecto →</a>
+            </div>
+
+            <div class="project">
+                <h3>Calculadora IMC</h3>
+                <p>Aplicación web para calcular el Índice de Masa Corporal con interfaz intuitiva.</p>
+                <a href="https://imcfuza.netlify.app/" target="_blank" class="project-link">Ver Proyecto →</a>
+            </div>
+
+            <div class="project">
+                <h3>Clima App</h3>
+                <p>Aplicación del clima en tiempo real con integración de API meteorológica.</p>
+                <a href="https://climafunval.netlify.app/" target="_blank" class="project-link">Ver Proyecto →</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Educación</h2>
+            <div class="education">
+                <h3>Desarrollo Web Full Stack</h3>
+                <p>Formación especializada en tecnologías web modernas y mejores prácticas de desarrollo.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Idiomas</h2>
+            <div class="skill-list">
+                <div class="skill-item">Español - Nativo</div>
+                <div class="skill-item">Inglés - Básico</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
