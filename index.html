@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Victor Arul Gutierrez Sanabria - Desarrollador Fullstack. Portafolio profesional y blog técnico">
+    <meta name="keywords" content="desarrollador fullstack, web development, frontend, backend, React, Node.js">
+    <meta name="author" content="Victor Arul Gutierrez Sanabria">
+    <title>Victor Gutierrez - Desarrollador Fullstack</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS para animaciones al scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <nav class="navbar">
+        <div class="nav-brand">Victor Gutierrez</div>
+        <div class="nav-items">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#proyectos" class="nav-link">Proyectos</a>
+            <a href="#tecnologias" class="nav-link">Tecnologías</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <button class="mobile-menu" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Victor Arul Gutierrez Sanabria</h1>
+            <p>Desarrollador Fullstack especializado en crear soluciones web innovadoras y escalables</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="proyectos" class="projects-section" data-aos="fade-up">
+            <h2>Mis Proyectos</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card" data-category="fullstack" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="assets/images/volumen-mayor.jpg" alt="Volumen Mayor" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                                <span>Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Volumen Mayor</h3>
+                        <p>Aplicación web para cálculos y gestión de volúmenes. Incluye funcionalidades avanzadas y dos versiones con diferentes características.</p>
+                        <div class="project-links">
+                            <a href="https://volumenmayor.netlify.app/" target="_blank" class="btn btn-primary">Ver Versión 1</a>
+                            <a href="https://volumenmayor1.netlify.app/" target="_blank" class="btn btn-secondary">Ver Versión 2</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="frontend" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="assets/images/granada-sud.jpg" alt="Granada Sud" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>CSS3</span>
+                                <span>Modern UI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Granada Sud</h3>
+                        <p>Plataforma web moderna para gestión y visualización de información. Diseño elegante y funcional con interfaz intuitiva.</p>
+                        <div class="project-links">
+                            <a href="https://granadasud.netlify.app/" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="app" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="assets/images/imc-calc.jpg" alt="IMC Calculator" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>Health Tech</span>
+                                <span>UX/UI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculadora IMC</h3>
+                        <p>Aplicación web para calcular el Índice de Masa Corporal. Interfaz limpia y fácil de usar con resultados precisos.</p>
+                        <div class="project-links">
+                            <a href="https://imcfuza.netlify.app/" target="_blank" class="btn btn-primary">Ver Aplicación</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="app" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="assets/images/clima-app.jpg" alt="Clima App" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span>API Integration</span>
+                                <span>Real-time Data</span>
+                                <span>Weather</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Clima App</h3>
+                        <p>Aplicación del clima en tiempo real. Muestra información meteorológica actualizada con una interfaz moderna y responsive.</p>
+                        <div class="project-links">
+                            <a href="https://climafunval.netlify.app/" target="_blank" class="btn btn-primary">Ver Aplicación</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="portfolio-highlight" data-aos="fade-up">
+                <h3>Mi Portafolio Completo</h3>
+                <p>Explora mi portafolio completo para ver más detalles sobre mis proyectos, habilidades y experiencia profesional.</p>
+                <div class="portfolio-cta">
+                    <a href="https://audaviall.netlify.app/" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> Ver Portafolio Completo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="tech-stack" data-aos="fade-up">
+            <h2>Stack Tecnológico</h2>
+            <div class="tech-grid">
+                <div class="tech-category" data-aos="fade-right">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>HTML5/CSS3</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite para Backend y Herramientas -->
+            </div>
+        </section>
+
+        <section id="blog" class="blog-section" data-aos="fade-up">
+            <h2>Blog Técnico</h2>
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-1.jpg" alt="React Performance" loading="lazy">
+                        <div class="blog-category">React</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Optimización de Rendimiento en React</h3>
+                        <p>Aprende las mejores prácticas para optimizar el rendimiento de tus aplicaciones React...</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 15 Nov 2023</span>
+                            <span><i class="far fa-clock"></i> 10 min lectura</span>
+                        </div>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+                <!-- Más artículos del blog -->
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section" data-aos="fade-up">
+            <h2>¿Trabajamos juntos?</h2>
+            <p>Estoy disponible para proyectos freelance y oportunidades laborales</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>gutierrezasanabria@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Ubicación</h3>
+                        <p>Colombia</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Mensaje</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Victor Gutierrez</h3>
+                    <p>Desarrollador Fullstack especializado en crear soluciones web innovadoras y escalables</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: gutierrezasanabria@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Victor Arul Gutierrez Sanabria - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/TUNUMERO" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
